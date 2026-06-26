@@ -349,6 +349,15 @@ const configs = {
       ]
     },
   },
+  "flooor-fun": {
+    "methodology": "TVL is the native ETH held in the flooor.fun auction contract on Base, comprising the current highest bid locked in escrow (activebidAM) plus accumulated epoch pool rewards (poolAccrued). ETH exits the contract when sellToHighest() is called, distributing 99.5% to the NFT seller and 0.5% fee to the protocol.",
+    "base": {
+      "owner": "0xF6B2C2411a101Db46c8513dDAef10b11184c58fF",
+      "tokens": [
+        ADDRESSES.null
+      ]
+    },
+  },
   "Hyperionx": {
     "methodology": "wUSDC will be equivalently converted into USDX, becoming part of Hyperion Exchange's TVL.",
     "zkfair": {
@@ -7081,6 +7090,12 @@ const configs = {
       "token": "0x5dF82810CB4B8f3e0Da3c031cCc9208ee9cF9500"
     },
   },
+  "circle-xreserve": {
+    "ethereum": {
+      "owner": "0x77777777Dcc4d5A8B6E418Fd04D8997ef11000eE",
+      "token": ADDRESSES.ethereum.USDC
+    }
+  },
   "citadao": {
     "ethereum": {
       "tvl": {
@@ -12186,6 +12201,18 @@ const configs = {
         "0x24fC9e2e89C7DCB0238B9D13B1F6566Eca45C6f6"
       ]
     },
+  },
+  "crovia": {
+    "cronos": {
+      "tvl": {
+        "owners": [
+          "0xb396e08ceca0f1bea3c120b21dc2c9ed6e25d7d4"
+        ],
+        "tokens": [
+          ADDRESSES.null
+        ]
+      }
+    }
   },
   "cryptoblades": {
     "bsc": {
@@ -22494,15 +22521,6 @@ const configs = {
         ADDRESSES.polynomial.SDAI,
         ADDRESSES.polynomial.sUSDe,
         ADDRESSES.polynomial.USD0
-      ]
-    },
-  },
-  "pondo": {
-    "timetravel": false,
-    "methodology": "TVL is the sum of all Aleo credits staked in the Pondo staking pool",
-    "aleo": {
-      "owners": [
-        "pondo_protocol.aleo"
       ]
     },
   },
